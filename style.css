@@ -3,3 +3,17 @@ body{
     padding: 0;
 }
 
+header{
+    height: 245px;
+    background: #579c87;
+}
+
+.title{
+    font-family: "Op", sans-serif;
+    color: #fdcb46;   
+    line-height: 245px;
+    text-align: center;
+    margin-top: 0;
+    font-size: 80px;
+    letter-spacing: -0.3rem;
+}
