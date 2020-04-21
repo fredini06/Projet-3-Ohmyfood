@@ -4,11 +4,9 @@ body{
     height: 100vh;
 }
 
-header{
-    display: block;
-}
+/*HEADER*/
 
-.header, .footer{
+.header, .footer, .btn--proch{
     background: #579c87;
 }
 
@@ -27,15 +25,20 @@ header{
     letter-spacing: -0.3rem;
 }
 
-.main{
+/*NAV*/
+
+.nav-carte{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-div{
-    background-color: #7971ea;
+.nav-carte__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
     border: 2px solid #443ea0;
     margin: 20px 40px;
     padding: 10px;
@@ -44,7 +47,19 @@ div{
     height: 35em;
 }
 
+.nav-carte__note--menu{
+    background-color: #fcdfdb;
+}
+
 .btn{
-    width: 135px;
-    height: 32px;
+    text-align: center;
+}
+
+.btn--proch{
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    font-family: "Op", sans-serif;
+    color: #fdcb46;
+    padding: 0 45px;
 }
