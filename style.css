@@ -5,17 +5,25 @@ body{
 }
 
 header{
-    background: #579c87;
-    margin-bottom: 30px;
+    display: block;
 }
 
-.title{
-    font-family: "Op", sans-serif;
-    color: #fdcb46;   
-    line-height: 245px;
+.header, .footer{
+    background: #579c87;
+}
+
+.header__heading{
     text-align: center;
-    margin-top: 0;
-    font-size: 90px;
+    padding: 30px;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.header__heading a{
+    text-decoration: none;
+    font-family: "Op", sans-serif;
+    color: #fdcb46;
+    font-size: 60px;
     letter-spacing: -0.3rem;
 }
 
