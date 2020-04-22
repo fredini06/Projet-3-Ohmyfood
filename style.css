@@ -51,6 +51,23 @@ body{
     background-color: #fcdfdb;
 }
 
+.nav-carte__note--titre{
+    font-family: devonshire, serif;
+    color: #3c1218;
+    margin: 0 0 30px 0;
+    letter-spacing: .05rem;
+    font-size: 2em;
+    font-weight: 100;    
+}
+
+.nav-carte__note--soustitre{
+    font-family: 'Nanum Pen Script', cursive;
+    color: #3c1218;
+    font-size: 5em;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
 .nav-carte__chic--menu{
     background-color: #fff5fe;
 }
