@@ -39,17 +39,37 @@ body{
     justify-content: center;
     align-items: center;
     list-style: none;
-    border: 2px solid #443ea0;
     margin: 20px 40px;
     padding: 10px;
     text-align: center;
     width: 25em;
     height: 35em;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .nav-carte__note--menu{
     background-color: #fcdfdb;
 }
+
+.nav-carte__chic--menu{
+    background-color: #fff5fe;
+}
+
+.nav-carte__delice--menu{
+    background-color: #f9f9f9;
+}
+
+.nav-carte__palette--menu{
+    background-color: #fdfffd;
+}
+
+.nav-carte a{
+    text-decoration: none;
+}
+
+/*NAV*/
+
+/*BUTTON*/
 
 .btn{
     text-align: center;
@@ -60,6 +80,32 @@ body{
     border-radius: 15px;
     margin-bottom: 20px;
     font-family: "Op", sans-serif;
+    font-size: 1.1em;
     color: #fdcb46;
-    padding: 0 45px;
+    padding: 0 85px;
 }
+
+/*BUTTON*/
+
+/*FOOTER*/
+
+.footer{
+    color: #fdcb46;
+}
+
+.footer__infos{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Op", sans-serif;
+    font-size: 28px;
+    padding: 15px 30px;
+    margin-bottom: 0;
+}
+
+.footer__infos--lien{
+    color: #fdcb46;
+    text-decoration: none;
+}
+
+
+
