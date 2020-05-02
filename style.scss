@@ -1,0 +1,194 @@
+$mainColor: #579c87;
+$mainTextColor: #fdcb46;
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/*HEADER*/
+
+.header, .footer, .btn--proch{
+    background: $mainColor;
+}
+
+.header__heading{
+    text-align: center;
+    padding: 30px;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.header__heading a{
+    text-decoration: none;
+    font-family: "Op", sans-serif;
+    color: $mainTextColor;
+    font-size: 60px;
+    letter-spacing: -0.3rem;
+}
+
+/*NAV*/
+
+.nav-carte{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-carte__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 20px 40px;
+    padding: 10px;
+    text-align: center;
+    width: 25em;
+    height: 35em;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/*NOTE*/
+
+.nav-carte__note--menu{
+    background-color: #fcdfdb;
+}
+
+.nav-carte__note--titre{
+    font-family: devonshire, serif;
+    color: #3c1218;
+    margin: 0 0 30px 0;
+    letter-spacing: .05rem;
+    font-size: 2em;
+    font-weight: 100;    
+}
+
+.nav-carte__note--soustitre{
+    font-family: 'Nanum Pen Script', cursive;
+    color: #3c1218;
+    font-size: 5em;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+/*CHIC*/
+
+.nav-carte__chic--titre{
+    font-family: 'Croissant One', serif;
+    font-size: 1.6em;
+    background: -webkit-linear-gradient(25deg, #c77412, #905bfd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-carte__chic--soustitre{
+    font-family: Libre Baskerville, serif;
+    color: #c77412;
+    font-size: 3em;
+}
+
+/*DELICE*/
+
+.nav-carte__delice--titre{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5em;
+    padding-left: 10px;
+    font-weight: 500;
+    background: -webkit-linear-gradient(25deg, #0431df, #0887fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-carte__delice--soustitre{
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 5em;
+    color: #0887fb;
+    margin: 0 0 30px 0;
+}
+
+/*PALETTE*/
+
+.nav-carte__palette--titre{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.5em;
+    padding-left: 10px;
+    font-weight: 500;
+    background: -webkit-linear-gradient(25deg, #4c9f42, #bfff7e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-carte__palette--soustitre{
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 5em;
+    color: #72bf56;
+    margin: 0 0 30px 0;
+}
+
+.nav-carte__chic--menu{
+    background-color: #fff5fe;
+}
+
+.nav-carte__delice--menu{
+    background-color: #f9f9f9;
+}
+
+.nav-carte__palette--menu{
+    background-color: #fdfffd;
+}
+
+.nav-carte a{
+    text-decoration: none;
+}
+
+/*NAV*/
+
+/*BUTTON*/
+
+.btn{
+    text-align: center;
+}
+
+.btn--proch{
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-bottom: 150px;
+    font-family: "Op", sans-serif;
+    font-size: 1.1em;
+    color: $mainTextColor;
+    padding: 0 85px;
+}
+
+/*BUTTON*/
+
+/*FOOTER*/
+
+.footer{
+    color: $mainTextColor;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.footer__infos{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Op", sans-serif;
+    font-size: 28px;
+    padding: 15px 30px;
+    margin-bottom: 0;
+    line-height: 10px;
+}
+
+.footer__infos--lien{
+    color: #fdcb46;
+    text-decoration: none;
+}
+
+
+
