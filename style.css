@@ -205,4 +205,11 @@ body {
   color: #fdcb46;
   text-decoration: none;
 }
+
+/*LES MENUS*/
+.main-note {
+  width: 50%;
+  margin: 0 auto;
+  background: #fcdfdb;
+}
 /*# sourceMappingURL=style.css.map */
