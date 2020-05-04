@@ -1,5 +1,7 @@
 $mainColor: #579c87;
 $mainTextColor: #fdcb46;
+$menuNoteColor: #fcdfdb;
+$menuNoteTextColor: #3c1218;
 
 
 
@@ -205,5 +207,46 @@ body{
 .main-note{
     width: 50%;
     margin: 0 auto;
-    background: #fcdfdb;
+    margin-bottom: 150px;
+    background: $menuNoteColor; 
+    color: $menuNoteTextColor;
+    text-align: center;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.2);
+    &__text{
+        font-family: 'Kalam', cursive;
+        font-size: 1em;
+    }
+    h1{
+        font-family: devonshire, serif;
+        letter-spacing: 0.1rem;
+        font-size: 2.5em;
+        font-weight: 50;
+        margin-top: 0;
+    }
+    h2{
+        font-size: 1.5em;
+    }
 }
+
+.main__note--img{
+    padding-top: 50px;
+}
+
+.main-note__text--tableau{
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    margin-bottom: 50px;
+}
+
+.main-note__text--tableau-tr{
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    line-height: 2rem;
+}
+
+.main__note--imgBottom{
+    padding: 0;
+}
+

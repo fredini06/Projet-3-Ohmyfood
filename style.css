@@ -210,6 +210,59 @@ body {
 .main-note {
   width: 50%;
   margin: 0 auto;
+  margin-bottom: 150px;
   background: #fcdfdb;
+  color: #3c1218;
+  text-align: center;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.main-note__text {
+  font-family: 'Kalam', cursive;
+  font-size: 1em;
+}
+
+.main-note h1 {
+  font-family: devonshire, serif;
+  letter-spacing: 0.1rem;
+  font-size: 2.5em;
+  font-weight: 50;
+  margin-top: 0;
+}
+
+.main-note h2 {
+  font-size: 1.5em;
+}
+
+.main__note--img {
+  padding-top: 50px;
+}
+
+.main-note__text--tableau {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 50px;
+  margin-bottom: 50px;
+}
+
+.main-note__text--tableau-tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 2rem;
+}
+
+.main__note--imgBottom {
+  padding: 0;
 }
 /*# sourceMappingURL=style.css.map */
