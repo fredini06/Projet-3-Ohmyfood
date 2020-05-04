@@ -38,6 +38,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 300px;
 }
 
 .nav-carte__item {
@@ -58,6 +59,21 @@ body {
   height: 35em;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-carte a {
+  text-decoration: none;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  opacity: 1;
+}
+
+.nav-carte a:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  opacity: 0.6;
 }
 
 /*NOTE*/
@@ -145,11 +161,7 @@ body {
   background-color: #fdfffd;
 }
 
-.nav-carte a {
-  text-decoration: none;
-}
-
-/*NAV*/
+/*END NAV*/
 /*BUTTON*/
 .btn {
   text-align: center;
