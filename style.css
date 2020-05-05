@@ -38,7 +38,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 100px;
 }
 
 .nav-carte__item {
@@ -206,11 +205,12 @@ body {
   text-decoration: none;
 }
 
+/*FOOTER*/
 /*LES MENUS*/
 .mainNote {
   width: 50%;
   margin: 0 auto;
-  margin-bottom: 150px;
+  margin-bottom: 40px;
   background: #fcdfdb;
   color: #3c1218;
   text-align: center;
@@ -268,7 +268,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: left;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -298,4 +297,22 @@ body {
 .noteBas__img {
   padding: 25px 10px;
 }
+
+/*BUTTON BAS*/
+.btnBas {
+  text-align: center;
+}
+
+.btnBas--accueil {
+  background: #579c87;
+  margin: 0 auto;
+  border-radius: 15px;
+  margin-bottom: 150px;
+  font-family: "Op", sans-serif;
+  font-size: 1.1em;
+  color: #fdcb46;
+  padding: 0 85px;
+}
+
+/*BUTTON BAS*/
 /*# sourceMappingURL=style.css.map */

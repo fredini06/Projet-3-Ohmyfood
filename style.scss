@@ -39,7 +39,6 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 100px;
     &__item{
         display: flex;
         justify-content: center;
@@ -173,7 +172,6 @@ body{
     }
 }
 
-
 /*BUTTON*/
 
 /*FOOTER*/
@@ -201,13 +199,14 @@ body{
     text-decoration: none;
 }
 
+/*FOOTER*/
 
 /*LES MENUS*/
 
 .mainNote{
     width: 50%;
     margin: 0 auto;
-    margin-bottom: 150px;
+    margin-bottom: 40px;
     background: $menuNoteColor; 
     color: $menuNoteTextColor;
     text-align: center;
@@ -250,7 +249,6 @@ body{
 
 .mainNote__text--tableau-tr{
     display: flex;
-    text-align: left;
     justify-content: space-between;
     line-height: 2rem;
 }
@@ -273,4 +271,21 @@ body{
     }
 }
 
+/*BUTTON BAS*/
+
+.btnBas{
+    text-align: center;
+    &--accueil{
+        background: $mainColor;
+        margin: 0 auto;
+        border-radius: 15px;
+        margin-bottom: 150px;
+        font-family: "Op", sans-serif;
+        font-size: 1.1em;
+        color: $mainTextColor;
+        padding: 0 85px;
+    }
+}
+
+/*BUTTON BAS*/
 
