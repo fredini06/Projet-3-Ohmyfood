@@ -39,7 +39,7 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 300px;
+    margin: 0 100px;
     &__item{
         display: flex;
         justify-content: center;
@@ -204,7 +204,7 @@ body{
 
 /*LES MENUS*/
 
-.main-note{
+.mainNote{
     width: 50%;
     margin: 0 auto;
     margin-bottom: 150px;
@@ -216,37 +216,61 @@ body{
         font-family: 'Kalam', cursive;
         font-size: 1em;
     }
-    h1{
+    &__textHaut{
         font-family: devonshire, serif;
-        letter-spacing: 0.1rem;
         font-size: 2.5em;
         font-weight: 50;
         margin-top: 0;
     }
     h2{
-        font-size: 1.5em;
+        font-size: 1.3em;
+        margin-top: 0;
     }
 }
 
-.main__note--img{
+.mainNote--img{
     padding-top: 50px;
 }
 
-.main-note__text--tableau{
+.mainNote__text--titre{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mainNote--traitG{
+    margin-top: 10px;
+}
+
+.mainNote__text--tableau{
     display: flex;
     flex-direction: column;
     padding: 0 50px;
     margin-bottom: 50px;
 }
 
-.main-note__text--tableau-tr{
+.mainNote__text--tableau-tr{
     display: flex;
     text-align: left;
     justify-content: space-between;
     line-height: 2rem;
 }
 
-.main__note--imgBottom{
-    padding: 0;
+.prixBold{
+    font-weight: 800;
 }
+
+.noteBas{
+    display: flex;
+    justify-content: center;
+    &__text{
+        font-family: devonshire, serif;
+        font-size: 2em;
+        font-weight: 50;
+        margin-bottom: 50px;
+    }
+    &__img{
+        padding: 25px 10px;
+    }
+}
+
 

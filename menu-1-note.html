@@ -8,7 +8,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Devonshire&family=Kalam:wght@700&family=Kaushan+Script&family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;600;700;800&family=Roboto:wght@900&family=Nanum+Pen+Script&family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Devonshire&family=Kalam&family=Kaushan+Script&family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;600;700;800&family=Roboto:wght@900&family=Nanum+Pen+Script&family=Dancing+Script&display=swap" rel="stylesheet">
 
     
     <link href="style.css" rel="stylesheet">
@@ -25,57 +25,77 @@
         </h1>
     </header>
     
-    <section class="main-note">
-        <img class="main__note--img" src="images/Note.png" alt="note de musique" width="60" height="60">
-        <h1>La note enchantée</h1>
+    <section class="mainNote">
+        <img class="mainNote--img" src="images/Note.png" alt="note de musique" width="60" height="60">
+        <h1 class="mainNote__textHaut">La note enchantée</h1>
 
-        <div class="main-note__text">
-            <h2>Prélude</h2>
-            <table class="main-note__text--tableau">
-                <tr class="main-note__text--tableau-tr">
+        <div class="mainNote__text">
+            <div class="mainNote__text--titre">
+                <img class="mainNote--traitG" src="images/menu-1-gauche.png" alt="déco texte gauche" width="30%" height="30%">
+                <h2>Prélude</h2>
+                <img class="mainNote--traitG" src="images/menu-1-gauche.png" alt="déco texte gauche" width="30%" height="30%">
+            </div>
+            <table class="mainNote__text--tableau">
+                <tr class="mainNote__text--tableau-tr">
                     <td>Ravioles de foie gras accompagnées de leur crème à la truffe</td>
-                    <td>98€</td>
+                    <td class="prixBold">98€</td>
                 </tr>
-                <tr class="main-note__text--tableau-tr">
-                    <td>Caviar osciètre sur blini à la farine de blé noir</td> <td>115€</td>
+                <tr class="mainNote__text--tableau-tr">
+                    <td>Caviar osciètre sur blini à la farine de blé noir</td>
+                    <td class="prixBold">115€</td>
                 </tr>
-                <tr class="main-note__text--tableau-tr">
-                    <td>Homard et espuma de potiron mariné aux zests d'orange</td> <td>89€</td>
+                <tr class="mainNote__text--tableau-tr">
+                    <td>Homard et espuma de potiron mariné aux zests d'orange</td>
+                    <td class="prixBold">89€</td>
                 </tr>
-                <tr class="main-note__text--tableau-tr">
-                    <td>Foie gras de canard cuit entier, confiture de figue et pain toasté</td> <td>105€</td>
+                <tr class="mainNote__text--tableau-tr">
+                    <td>Foie gras de canard cuit entier, confiture de figue et pain toasté</td>
+                    <td class="prixBold">105€</td>
                 </tr>
             </table>
 
-            <h2>Point d'orgue</h2>
-            <table class="main-note__text--tableau">
-                <tr class="main-note__text--tableau-tr">
+            <div class="mainNote__text--titre">
+                <img class="mainNote--traitG" src="images/menu-1-gauche.png" alt="déco texte gauche" width="30%" height="30%">
+                <h2>Point d'orgue</h2>
+                <img class="mainNote--traitG" src="images/menu-1-gauche.png" alt="déco texte gauche" width="30%" height="30%">
+            </div>
+            <table class="mainNote__text--tableau">
+                <tr class="mainNote__text--tableau-tr">
                     <td>Noix de Saint-Jacques sur lit de purée céleri-rave</td>
-                    <td>102€</td>
+                    <td class="prixBold">102€</td>
                 </tr>
-                <tr class="main-note__text--tableau-tr">
-                    <td>Langoustine poêlée, purée de patate douce</td> <td>205€</td>
+                <tr class="mainNote__text--tableau-tr">
+                    <td>Langoustine poêlée, purée de patate douce</td>
+                    <td class="prixBold">205€</td>
                 </tr>
-                <tr class="main-note__text--tableau-tr">
-                    <td>Mojoté de queue de boeuf et riz sauvage aux zests de citron</td> <td>169€</td>
+                <tr class="mainNote__text--tableau-tr">
+                    <td>Mojoté de queue de boeuf et riz sauvage aux zests de citron</td>
+                    <td class="prixBold">169€</td>
                 </tr>
             </table>
 
-            <h2>Mouvement final</h2>
-            <table class="main-note__text--tableau">
-                <tr class="main-note__text--tableau-tr">
+            <div class="mainNote__text--titre">
+                <img class="mainNote--traitG" src="images/menu-1-gauche.png" alt="déco texte gauche" width="30%" height="30%">
+                <h2>Mouvement final</h2>
+                <img class="mainNote--traitG" src="images/menu-1-gauche.png" alt="déco texte gauche" width="30%" height="30%">
+            </div>
+            <table class="mainNote__text--tableau">
+                <tr class="mainNote__text--tableau-tr">
                     <td>Macaron noisette chocolat, glace au caramel brun et sel de Guérande</td></tr>
-                <tr class="main-note__text--tableau-tr">
+                <tr class="mainNote__text--tableau-tr">
                     <td>Baba au rhum revisité avec son coulis de citron</td>
                 </tr>
-                <tr class="main-note__text--tableau-tr">
+                <tr class="mainNote__text--tableau-tr">
                     <td>Tarte au citron meringuée déstructurée</td>
                 </tr>
             </table>
         </div>
 
-        <img class="main__note--imgBottom" src="images/Note.png" alt="note de musique" width="40" height="40">
-        <h1>La note enchantée</h1>
+
+        <div class="noteBas">
+            <img class="noteBas__img" src="images/Note.png" alt="note de musique" width="40" height="40">
+            <h1 class="noteBas__text">La note enchantée</h1>
+        </div>
         
     </section>
     

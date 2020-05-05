@@ -38,7 +38,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 300px;
+  margin: 0 100px;
 }
 
 .nav-carte__item {
@@ -207,7 +207,7 @@ body {
 }
 
 /*LES MENUS*/
-.main-note {
+.mainNote {
   width: 50%;
   margin: 0 auto;
   margin-bottom: 150px;
@@ -218,28 +218,41 @@ body {
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.main-note__text {
+.mainNote__text {
   font-family: 'Kalam', cursive;
   font-size: 1em;
 }
 
-.main-note h1 {
+.mainNote__textHaut {
   font-family: devonshire, serif;
-  letter-spacing: 0.1rem;
   font-size: 2.5em;
   font-weight: 50;
   margin-top: 0;
 }
 
-.main-note h2 {
-  font-size: 1.5em;
+.mainNote h2 {
+  font-size: 1.3em;
+  margin-top: 0;
 }
 
-.main__note--img {
+.mainNote--img {
   padding-top: 50px;
 }
 
-.main-note__text--tableau {
+.mainNote__text--titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.mainNote--traitG {
+  margin-top: 10px;
+}
+
+.mainNote__text--tableau {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,7 +264,7 @@ body {
   margin-bottom: 50px;
 }
 
-.main-note__text--tableau-tr {
+.mainNote__text--tableau-tr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -262,7 +275,27 @@ body {
   line-height: 2rem;
 }
 
-.main__note--imgBottom {
-  padding: 0;
+.prixBold {
+  font-weight: 800;
+}
+
+.noteBas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.noteBas__text {
+  font-family: devonshire, serif;
+  font-size: 2em;
+  font-weight: 50;
+  margin-bottom: 50px;
+}
+
+.noteBas__img {
+  padding: 25px 10px;
 }
 /*# sourceMappingURL=style.css.map */
