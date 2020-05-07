@@ -227,6 +227,32 @@ body{
     }
 }
 
+// SOULIGNEMENT ANIME
+.soulign{
+    display: inline-block;
+    position: relative;
+}
+
+.soulign::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    width: 102%;
+    height: 2px;
+    bottom: 3px;
+    background: $menuNoteTextColor;
+    transform-origin: bottom left;
+    transition: all 0.4s;
+}
+
+.soulign:hover::before{
+    transform: scaleX(1);
+}
+
+// SOULIGNEMENT ANIME
+
+
 .mainNote--img{
     padding-top: 50px;
 }
