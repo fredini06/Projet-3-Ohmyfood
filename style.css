@@ -161,7 +161,7 @@ body {
 }
 
 /*END NAV*/
-/*BUTTON*/
+/*BUTTON PROCHAINEMENT*/
 .btn {
   text-align: center;
 }
@@ -176,7 +176,7 @@ body {
   padding: 0 85px;
 }
 
-/*BUTTON*/
+/*BUTTON PROCHAINEMENT*/
 /*FOOTER*/
 .footer {
   color: #fdcb46;
@@ -324,7 +324,7 @@ body {
   padding: 25px 10px;
 }
 
-/*BUTTON BAS*/
+/*BUTTON BAS MENU*/
 .btnBas {
   text-align: center;
 }
@@ -336,8 +336,12 @@ body {
   margin-bottom: 150px;
   font-family: "Op", sans-serif;
   font-size: 1.1em;
-  color: #fdcb46;
   padding: 0 85px;
+}
+
+.btnBas a {
+  text-decoration: none;
+  color: #fdcb46;
 }
 
 /*BUTTON BAS*/

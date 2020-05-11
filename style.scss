@@ -157,7 +157,7 @@ body{
 
 /*END NAV*/
 
-/*BUTTON*/
+/*BUTTON PROCHAINEMENT*/
 
 .btn{
     text-align: center;
@@ -172,7 +172,7 @@ body{
     }
 }
 
-/*BUTTON*/
+/*BUTTON PROCHAINEMENT*/
 
 /*FOOTER*/
 
@@ -297,7 +297,7 @@ body{
     }
 }
 
-/*BUTTON BAS*/
+/*BUTTON BAS MENU*/
 
 .btnBas{
     text-align: center;
@@ -308,8 +308,11 @@ body{
         margin-bottom: 150px;
         font-family: "Op", sans-serif;
         font-size: 1.1em;
-        color: $mainTextColor;
         padding: 0 85px;
+    }
+    & a{
+        text-decoration: none;
+        color: $mainTextColor;
     }
 }
 
