@@ -243,7 +243,6 @@ body {
 .soulign::before {
   content: "";
   position: absolute;
-  width: 100%;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   width: 102%;
@@ -347,7 +346,6 @@ body {
 
 /*BUTTON BAS*/
 .mainChic {
-  background: #b40fa4;
   width: 50%;
   margin: 0 auto 50px;
   padding-bottom: 50px;
@@ -437,7 +435,6 @@ body {
 .mainChic__Stitre--soulign1::before {
   content: "";
   position: absolute;
-  width: 100%;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   width: 95%;
@@ -464,7 +461,6 @@ body {
 .mainChic__Stitre2--soulign::before {
   content: "";
   position: absolute;
-  width: 100%;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   width: 69%;
@@ -491,7 +487,6 @@ body {
 .mainChic__Stitre3--soulign::before {
   content: "";
   position: absolute;
-  width: 100%;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   width: 85%;
@@ -507,5 +502,156 @@ body {
 .mainChic__Stitre3--soulign:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+}
+
+.mainDelice {
+  width: 50%;
+  margin: 0 auto 50px;
+  padding-bottom: 50px;
+  background: #edefef;
+  text-align: center;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.mainDelice__titre {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.8em;
+  padding-left: 10px;
+  font-weight: 500;
+  background: -webkit-linear-gradient(25deg, #0431df, #0887fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 100px 0 30px;
+}
+
+.mainDelice__Stitre {
+  font-family: 'Kalam', cursive;
+  font-size: 1.5em;
+  font-weight: normal;
+  color: #000;
+  width: 480px;
+  margin: 0;
+  padding: 0;
+}
+
+.menDel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.imgMenu3 img {
+  max-width: 80%;
+  max-height: 80%;
+  margin-top: 12px;
+}
+
+.mainDelice__Stitre1--soulign {
+  display: inline-block;
+  position: relative;
+}
+
+.mainDelice__Stitre1--soulign::before {
+  content: "";
+  position: absolute;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  width: 85%;
+  height: 2px;
+  bottom: 5px;
+  background: #000;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.mainDelice__Stitre1--soulign:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.mainDelice__Stitre2--soulign {
+  display: inline-block;
+  position: relative;
+}
+
+.mainDelice__Stitre2--soulign::before {
+  content: "";
+  position: absolute;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  width: 75%;
+  height: 2px;
+  bottom: 5px;
+  background: #000;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.mainDelice__Stitre2--soulign:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.mainDelice__Stitre3--soulign {
+  display: inline-block;
+  position: relative;
+}
+
+.mainDelice__Stitre3--soulign::before {
+  content: "";
+  position: absolute;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  width: 72%;
+  height: 2px;
+  bottom: 5px;
+  background: #000;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.mainDelice__Stitre3--soulign:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.mainDel__text--tableau {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 40px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  font-family: 'kalam', cursive;
+  font-size: 1.15em;
+  font-weight: normal;
+  color: #000;
+}
+
+.mainDel__text--tableau-tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 3rem;
+}
+
+.prixBold3 {
+  font-size: 1em;
 }
 /*# sourceMappingURL=style.css.map */

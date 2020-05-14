@@ -2,6 +2,7 @@ $mainColor: #579c87;
 $mainTextColor: #fdcb46;
 $menuNoteColor: #fcdfdb;
 $menuChicColor: #fff5fe;
+$menuDeliceColor: #edefef;
 $menuNoteTextColor: #3c1218;
 
 
@@ -238,7 +239,6 @@ body{
 .soulign::before{
     content: "";
     position: absolute;
-    width: 100%;
     transform: scaleX(0);
     width: 102%;
     height: 2px;
@@ -324,7 +324,6 @@ body{
 // CHIC
 
 .mainChic{
-    background: #b40fa4;
     width: 50%;
     margin: 0 auto 50px;
     padding-bottom: 50px;
@@ -400,7 +399,6 @@ body{
 .mainChic__Stitre--soulign1::before{
     content: "";
     position: absolute;
-    width: 100%;
     transform: scaleX(0);
     width: 95%;
     height: 2px;
@@ -425,7 +423,6 @@ body{
     &::before{
         content: "";
         position: absolute;
-        width: 100%;
         transform: scaleX(0);
         width: 69%;
         height: 2px;
@@ -450,7 +447,6 @@ body{
     &::before{
         content: "";
         position: absolute;
-        width: 100%;
         transform: scaleX(0);
         width: 85%;
         height: 2px;
@@ -463,3 +459,141 @@ body{
         transform: scaleX(1);
     }
 }
+
+// SOULIGNEMENT ANIME 4
+
+// CHIC
+
+// DELICE
+
+.mainDelice{
+    width: 50%;
+    margin: 0 auto 50px;
+    padding-bottom: 50px;
+    background: $menuDeliceColor;
+    text-align: center;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.2);
+    &__titre{
+        font-family: 'Dancing Script', cursive;
+        font-size: 3.8em;
+        padding-left: 10px;
+        font-weight: 500;
+        background: -webkit-linear-gradient(25deg, #0431df, #0887fb);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding: 100px 0 30px;
+    }
+}
+
+.mainDelice__Stitre{
+    font-family: 'Kalam', cursive;
+    font-size: 1.5em;
+    font-weight: normal;
+    color: #000;
+    width: 480px;
+    margin: 0;
+    padding: 0;
+}
+
+.menDel{
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgMenu3 img{
+    max-width: 80%;
+    max-height: 80%;
+    margin-top: 12px;  
+}
+
+// SOULIGNEMENT ANIME 5
+
+.mainDelice__Stitre1--soulign{
+    display: inline-block;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;       
+        transform: scaleX(0);
+        width: 85%;
+        height: 2px;
+        bottom: 5px;
+        background: #000;
+        transform-origin: bottom left;
+        transition: all 0.4s;
+    }
+    &:hover::before{
+        transform: scaleX(1);
+    }
+}
+
+// SOULIGNEMENT ANIME 5
+
+// SOULIGNEMENT ANIME 6
+
+.mainDelice__Stitre2--soulign{
+    display: inline-block;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;       
+        transform: scaleX(0);
+        width: 75%;
+        height: 2px;
+        bottom: 5px;
+        background: #000;
+        transform-origin: bottom left;
+        transition: all 0.4s;
+    }
+    &:hover::before{
+        transform: scaleX(1);
+    }
+}
+
+// SOULIGNEMENT ANIME 6
+
+// SOULIGNEMENT ANIME 7
+
+.mainDelice__Stitre3--soulign{
+    display: inline-block;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;       
+        transform: scaleX(0);
+        width: 72%;
+        height: 2px;
+        bottom: 5px;
+        background: #000;
+        transform-origin: bottom left;
+        transition: all 0.4s;
+    }
+    &:hover::before{
+        transform: scaleX(1);
+    }
+}
+
+// SOULIGNEMENT ANIME 7
+
+.mainDel__text--tableau{
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    font-family: 'kalam', cursive;
+    font-size: 1.15em;
+    font-weight: normal;
+    color: #000;
+    &-tr{
+        display: flex;
+        justify-content: space-between;
+        line-height: 3rem;
+    }
+}
+
+.prixBold3{
+    font-size: 1em;
+}
+
+// DELICE
