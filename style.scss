@@ -1,6 +1,7 @@
 $mainColor: #579c87;
 $mainTextColor: #fdcb46;
 $menuNoteColor: #fcdfdb;
+$menuChicColor: #fff5fe;
 $menuNoteTextColor: #3c1218;
 
 
@@ -202,6 +203,7 @@ body{
 /*FOOTER*/
 
 /*LES MENUS*/
+// NOTE
 
 .mainNote{
     width: 50%;
@@ -227,7 +229,7 @@ body{
     }
 }
 
-// SOULIGNEMENT ANIME
+// SOULIGNEMENT ANIME 1
 .soulign{
     display: inline-block;
     position: relative;
@@ -250,7 +252,7 @@ body{
     transform: scaleX(1);
 }
 
-// SOULIGNEMENT ANIME
+// SOULIGNEMENT ANIME 1
 
 
 .mainNote--img{
@@ -281,6 +283,7 @@ body{
 
 .prixBold{
     font-weight: 800;
+    font-size: 1.2em;
 }
 
 .noteBas{
@@ -318,3 +321,145 @@ body{
 
 /*BUTTON BAS*/
 
+// CHIC
+
+.mainChic{
+    background: #b40fa4;
+    width: 50%;
+    margin: 0 auto 50px;
+    padding-bottom: 50px;
+    background: $menuChicColor;
+    text-align: center;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.2);
+    &__titre{
+        font-family: 'Croissant One', serif;
+        font-size: 2em;
+        background: -webkit-linear-gradient(25deg, #c77412, #905bfd);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding: 100px 0 50px;
+        font-weight: normal;
+    }
+}
+
+.men{
+    display: flex;
+    justify-content: space-around;
+}
+
+.mainChic__Stitre{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #c67412;
+    width: 480px;
+    margin: 0;
+    padding: 0;
+}
+
+.imgMenu2G img{
+    max-width: 100%;
+    max-height:100%;
+    margin-top: 10px;  
+}
+
+.mainChic__text--tableau{
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.mainChic__text--tableau-tr{
+    display: flex;
+    justify-content: space-between;
+    line-height: 2rem;
+    font-family: 'Libre Baskerville', serif;
+    font-size: .9em;
+    color: #c67412;
+    &2{
+        color: #a56799;
+    }
+    &3{
+        color: #6e4ccc;
+    }
+}
+
+.prixBold2{
+    font-size: 1.2em;
+}
+
+// SOULIGNEMENT ANIME 2
+
+.mainChic__Stitre--soulign1{
+    display: inline-block;
+    position: relative;
+}
+
+.mainChic__Stitre--soulign1::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    width: 95%;
+    height: 2px;
+    bottom: -5px;
+    background: #c67412;
+    transform-origin: bottom left;
+    transition: all 0.4s;
+}
+
+.mainChic__Stitre--soulign1:hover::before{
+    transform: scaleX(1);
+}
+
+// SOULIGNEMENT ANIME 2
+
+// SOULIGNEMENT ANIME 3
+
+.mainChic__Stitre2--soulign{
+    color: #a56799;
+    display: inline-block;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        width: 69%;
+        height: 2px;
+        bottom: -5px;
+        background: #a56799;
+        transform-origin: bottom left;
+        transition: all 0.4s;
+    }
+    &:hover::before{
+        transform: scaleX(1);
+    }
+}
+
+// SOULIGNEMENT ANIME 3
+
+// SOULIGNEMENT ANIME 4
+
+.mainChic__Stitre3--soulign{
+    color: #6e4ccc;
+    display: inline-block;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        width: 85%;
+        height: 2px;
+        bottom: -5px;
+        background: #6e4ccc;
+        transform-origin: bottom left;
+        transition: all 0.4s;
+    }
+    &:hover::before{
+        transform: scaleX(1);
+    }
+}
