@@ -58,6 +58,7 @@ body {
   height: 35em;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .nav-carte a {
@@ -67,6 +68,7 @@ body {
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
   opacity: 1;
+  padding: 100px;
 }
 
 .nav-carte a:hover {
@@ -163,17 +165,71 @@ body {
 /*END NAV*/
 /*BUTTON PROCHAINEMENT*/
 .btn {
-  text-align: center;
+  margin: 0 auto;
+  background: #579c87;
+  width: 19em;
+  height: 3em;
+  line-height: 3em;
+  border-radius: 20px;
+  margin-bottom: 150px;
+  cursor: pointer;
 }
 
-.btn--proch {
-  margin: 0 auto;
-  border-radius: 15px;
-  margin-bottom: 150px;
+.btn a {
   font-family: "Op", sans-serif;
-  font-size: 1.1em;
+  text-decoration: none;
+  font-size: 1.6em;
   color: #fdcb46;
-  padding: 0 85px;
+  margin: 0 52px;
+}
+
+.point {
+  margin: 0;
+  padding: 0;
+}
+
+.point::after {
+  display: inline-block;
+  -webkit-animation: dotted 2s infinite;
+          animation: dotted 2s infinite;
+  content: "";
+  margin-left: 5px;
+}
+
+@-webkit-keyframes dotted {
+  0% {
+    content: "";
+  }
+  25% {
+    content: ".";
+  }
+  50% {
+    content: "..";
+  }
+  75% {
+    content: "...";
+  }
+  100% {
+    content: "";
+  }
+}
+
+@keyframes dotted {
+  0% {
+    content: "";
+  }
+  25% {
+    content: ".";
+  }
+  50% {
+    content: "..";
+  }
+  75% {
+    content: "...";
+  }
+  100% {
+    content: "";
+  }
 }
 
 /*BUTTON PROCHAINEMENT*/
@@ -203,6 +259,38 @@ body {
 .footer__infos--lien {
   color: #fdcb46;
   text-decoration: none;
+  -webkit-animation: shake .1s infinite;
+          animation: shake .1s infinite;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translateX(2%);
+            transform: translateX(2%);
+  }
+  33% {
+    -webkit-transform: translateX(-2%) rotate(2deg);
+            transform: translateX(-2%) rotate(2deg);
+  }
+  65% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translateX(2%);
+            transform: translateX(2%);
+  }
+  33% {
+    -webkit-transform: translateX(-2%) rotate(2deg);
+            transform: translateX(-2%) rotate(2deg);
+  }
+  65% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
 }
 
 /*FOOTER*/
@@ -235,12 +323,33 @@ body {
   margin-top: 0;
 }
 
-.soulign {
+.menNote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.mainNote__Stitre {
+  font-family: 'Kalam', cursive;
+  font-size: 1.2em;
+  font-weight: 700;
+  width: 180px;
+  padding: 0;
+}
+
+.imgMenu1 img {
+  max-width: 63%;
+  margin-top: 10px;
+}
+
+.mainNote__Stitre--soulign {
   display: inline-block;
   position: relative;
 }
 
-.soulign::before {
+.mainNote__Stitre--soulign::before {
   content: "";
   position: absolute;
   -webkit-transform: scaleX(0);
@@ -255,7 +364,7 @@ body {
   transition: all 0.4s;
 }
 
-.soulign:hover::before {
+.mainNote__Stitre--soulign:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
@@ -273,11 +382,8 @@ body {
           justify-content: space-evenly;
 }
 
-.mainNote--traitG {
-  margin-top: 10px;
-}
-
 .mainNote__text--tableau {
+  font-family: 'Kalam Script', cursive;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -324,27 +430,6 @@ body {
   padding: 25px 10px;
 }
 
-/*BUTTON BAS MENU*/
-.btnBas {
-  text-align: center;
-}
-
-.btnBas--accueil {
-  background: #579c87;
-  margin: 0 auto;
-  border-radius: 15px;
-  margin-bottom: 150px;
-  font-family: "Op", sans-serif;
-  font-size: 1.1em;
-  padding: 0 85px;
-}
-
-.btnBas a {
-  text-decoration: none;
-  color: #fdcb46;
-}
-
-/*BUTTON BAS*/
 .mainChic {
   width: 50%;
   margin: 0 auto 50px;
@@ -365,7 +450,7 @@ body {
   font-weight: normal;
 }
 
-.men {
+.menChic {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -636,7 +721,7 @@ body {
   margin-bottom: 50px;
   margin-top: 30px;
   font-family: 'kalam', cursive;
-  font-size: 1.15em;
+  font-size: 1.1em;
   font-weight: normal;
   color: #000;
 }
@@ -804,5 +889,24 @@ body {
 .prixBold3 {
   font-size: 1.3em;
   font-weight: 600;
+}
+
+/*BUTTON BAS MENU*/
+.btnBas {
+  margin: 0 auto 150px;
+  background: #579c87;
+  width: 19em;
+  height: 3em;
+  line-height: 3em;
+  border-radius: 20px;
+}
+
+.btnBas a {
+  font-family: "Op", sans-serif;
+  text-decoration: none;
+  font-size: 1.6em;
+  color: #fdcb46;
+  display: block;
+  margin: 0 108px;
 }
 /*# sourceMappingURL=style.css.map */
