@@ -67,8 +67,6 @@ body{
     }
 }
 
-
-
 /*NOTE*/
 
 .nav-carte__note--menu{
@@ -242,7 +240,9 @@ body{
 
 /*FOOTER*/
 
+
 /*LES MENUS*/
+
 // NOTE
 
 .mainNote{
@@ -271,7 +271,7 @@ body{
 
 .menNote{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .mainNote__Stitre{
@@ -282,35 +282,73 @@ body{
     padding: 0;
 }
 
-
 .imgMenu1 img{
     max-width: 63%;
     margin-top: 10px;  
 }
 
 // SOULIGNEMENT ANIME 1
-.mainNote__Stitre--soulign{
+.mainNote__Stitre--soulign1{
     display: inline-block;
     position: relative;
-}
-
-.mainNote__Stitre--soulign::before{
-    content: "";
-    position: absolute;
-    transform: scaleX(0);
-    width: 102%;
-    height: 2px;
-    bottom: 3px;
-    background: $menuNoteTextColor;
-    transform-origin: bottom left;
-    transition: all 0.4s;
-}
-
-.mainNote__Stitre--soulign:hover::before{
-    transform: scaleX(1);
+    &::before{
+        content: "";
+        position: absolute;
+        transform: scaleX(0);
+        width: 45%;
+        height: 2px;
+        bottom: 3px;
+        background: $menuNoteTextColor;
+        transform-origin: bottom left;
+        transition: all 0.4s;
+    }
+    &:hover::before{
+        transform: scaleX(1);
 }
 
 // SOULIGNEMENT ANIME 1
+
+// SOULIGNEMENT ANIME 2
+.mainNote__Stitre--soulign2{
+    display: inline-block;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        transform: scaleX(0);
+        width: 45%;
+        height: 2px;
+        bottom: 3px;
+        background: $menuNoteTextColor;
+        transform-origin: bottom left;
+        transition: all 0.4s;
+    }
+    &:hover::before{
+        transform: scaleX(1);
+}
+
+// SOULIGNEMENT ANIME 2
+
+// SOULIGNEMENT ANIME 3
+.mainNote__Stitre--soulign3{
+    display: inline-block;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        transform: scaleX(0);
+        width: 45%;
+        height: 2px;
+        bottom: 3px;
+        background: $menuNoteTextColor;
+        transform-origin: bottom left;
+        transition: all 0.4s;
+    }
+    &:hover::before{
+        transform: scaleX(1);
+}
+
+// SOULIGNEMENT ANIME 3
 
 
 .mainNote--img{
@@ -324,7 +362,7 @@ body{
 
 
 .mainNote__text--tableau{
-    font-family: 'Kalam Script', cursive;
+    font-family: 'Kalam', cursive;
     display: flex;
     flex-direction: column;
     padding: 0 50px;
@@ -787,5 +825,4 @@ body{
         margin: 0 108px;
     }
 }
-
 
