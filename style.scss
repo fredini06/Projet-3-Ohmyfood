@@ -49,7 +49,7 @@ body{
         margin: 20px 40px;
         padding: 10px;
         text-align: center;
-        width: 25em;
+        width: 30em;
         height: 35em;
         box-shadow:0 0 10px rgba(0, 0, 0, 0.2);
         cursor: pointer;
@@ -304,6 +304,7 @@ body{
     }
     &:hover::before{
         transform: scaleX(1);
+    }
 }
 
 // SOULIGNEMENT ANIME 1
@@ -325,7 +326,9 @@ body{
     }
     &:hover::before{
         transform: scaleX(1);
+    }
 }
+
 
 // SOULIGNEMENT ANIME 2
 
@@ -346,6 +349,7 @@ body{
     }
     &:hover::before{
         transform: scaleX(1);
+    }
 }
 
 // SOULIGNEMENT ANIME 3
@@ -394,7 +398,7 @@ body{
     }
 }
 
-
+// ********************************************
 
 // CHIC
 
@@ -464,7 +468,7 @@ body{
     font-size: 1.2em;
 }
 
-// SOULIGNEMENT ANIME 2
+// SOULIGNEMENT ANIME 1
 
 .mainChic__Stitre--soulign1{
     display: inline-block;
@@ -487,11 +491,11 @@ body{
     transform: scaleX(1);
 }
 
+// SOULIGNEMENT ANIME 1
+
 // SOULIGNEMENT ANIME 2
 
-// SOULIGNEMENT ANIME 3
-
-.mainChic__Stitre2--soulign{
+.mainChic__Stitre--soulign2{
     color: #a56799;
     display: inline-block;
     position: relative;
@@ -511,11 +515,11 @@ body{
     }
 }
 
+// SOULIGNEMENT ANIME 2
+
 // SOULIGNEMENT ANIME 3
 
-// SOULIGNEMENT ANIME 4
-
-.mainChic__Stitre3--soulign{
+.mainChic__Stitre--soulign3{
     color: #6e4ccc;
     display: inline-block;
     position: relative;
@@ -535,9 +539,11 @@ body{
     }
 }
 
-// SOULIGNEMENT ANIME 4
+// SOULIGNEMENT ANIME 3
 
 // CHIC
+
+// ********************************************
 
 // DELICE
 
@@ -580,9 +586,9 @@ body{
     margin-top: 12px;  
 }
 
-// SOULIGNEMENT ANIME 5
+// SOULIGNEMENT ANIME 1
 
-.mainDelice__Stitre1--soulign{
+.mainDelice__Stitre--soulign1{
     display: inline-block;
     position: relative;
     &::before{
@@ -592,7 +598,7 @@ body{
         width: 85%;
         height: 2px;
         bottom: 5px;
-        background: #000;
+        background: #0228dd;
         transform-origin: bottom left;
         transition: all 0.4s;
     }
@@ -601,21 +607,21 @@ body{
     }
 }
 
-// SOULIGNEMENT ANIME 5
+// SOULIGNEMENT ANIME 1
 
-// SOULIGNEMENT ANIME 6
+// SOULIGNEMENT ANIME 2
 
-.mainDelice__Stitre2--soulign{
+.mainDelice__Stitre--soulign2{
     display: inline-block;
     position: relative;
     &::before{
         content: "";
         position: absolute;       
         transform: scaleX(0);
-        width: 75%;
+        width: 77%;
         height: 2px;
         bottom: 5px;
-        background: #000;
+        background: #0670f3;
         transform-origin: bottom left;
         transition: all 0.4s;
     }
@@ -624,21 +630,21 @@ body{
     }
 }
 
-// SOULIGNEMENT ANIME 6
+// SOULIGNEMENT ANIME 2
 
-// SOULIGNEMENT ANIME 7
+// SOULIGNEMENT ANIME 3
 
-.mainDelice__Stitre3--soulign{
+.mainDelice__Stitre--soulign3{
     display: inline-block;
     position: relative;
     &::before{
         content: "";
         position: absolute;       
         transform: scaleX(0);
-        width: 72%;
+        width: 74%;
         height: 2px;
         bottom: 5px;
-        background: #000;
+        background: #229df9;
         transform-origin: bottom left;
         transition: all 0.4s;
     }
@@ -647,7 +653,7 @@ body{
     }
 }
 
-// SOULIGNEMENT ANIME 7
+// SOULIGNEMENT ANIME 3
 
 .mainDel__text--tableau{
     display: flex;
@@ -714,9 +720,9 @@ body{
     margin-top: 20px;  
 }
 
-// SOULIGNEMENT ANIME 8
+// SOULIGNEMENT ANIME 1
 
-.mainPal__Stitre1--soulign{
+.mainPal__Stitre--soulign1{
     display: inline-block;
     position: relative;
     &::before{
@@ -726,7 +732,7 @@ body{
         width: 45%;
         height: 2px;
         bottom: -1px;
-        background: #000;
+        background: #83cd60;
         transform-origin: bottom left;
         transition: all 0.4s;
     }
@@ -735,11 +741,11 @@ body{
     }
 }
 
-// SOULIGNEMENT ANIME 8
+// SOULIGNEMENT ANIME 1
 
-// SOULIGNEMENT ANIME 9
+// SOULIGNEMENT ANIME 2
 
-.mainPal__Stitre2--soulign{
+.mainPal__Stitre--soulign2{
     display: inline-block;
     position: relative;
     &::before{
@@ -749,7 +755,7 @@ body{
         width: 90%;
         height: 2px;
         bottom: -1px;
-        background: #000;
+        background: #83cd60;
         transform-origin: bottom left;
         transition: all 0.4s;
     }
@@ -758,11 +764,11 @@ body{
     }
 }
 
-// SOULIGNEMENT ANIME 9
+// SOULIGNEMENT ANIME 2
 
-// SOULIGNEMENT ANIME 10
+// SOULIGNEMENT ANIME 3
 
-.mainPal__Stitre3--soulign{
+.mainPal__Stitre--soulign3{
     display: inline-block;
     position: relative;
     &::before{
@@ -772,7 +778,7 @@ body{
         width: 100%;
         height: 2px;
         bottom: -1px;
-        background: #000;
+        background: #83cd60;
         transform-origin: bottom left;
         transition: all 0.4s;
     }
@@ -781,7 +787,7 @@ body{
     }
 }
 
-// SOULIGNEMENT ANIME 10
+// SOULIGNEMENT ANIME 3
 
 .mainPal__text--tableau{
     display: flex;
@@ -825,4 +831,3 @@ body{
         margin: 0 108px;
     }
 }
-

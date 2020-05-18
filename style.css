@@ -54,7 +54,7 @@ body {
   margin: 20px 40px;
   padding: 10px;
   text-align: center;
-  width: 25em;
+  width: 30em;
   height: 35em;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -370,6 +370,56 @@ body {
           transform: scaleX(1);
 }
 
+.mainNote__Stitre--soulign2 {
+  display: inline-block;
+  position: relative;
+}
+
+.mainNote__Stitre--soulign2::before {
+  content: "";
+  position: absolute;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  width: 45%;
+  height: 2px;
+  bottom: 3px;
+  background: #3c1218;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.mainNote__Stitre--soulign2:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.mainNote__Stitre--soulign3 {
+  display: inline-block;
+  position: relative;
+}
+
+.mainNote__Stitre--soulign3::before {
+  content: "";
+  position: absolute;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  width: 45%;
+  height: 2px;
+  bottom: 3px;
+  background: #3c1218;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.mainNote__Stitre--soulign3:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
 .mainNote--img {
   padding-top: 50px;
 }
@@ -538,13 +588,13 @@ body {
           transform: scaleX(1);
 }
 
-.mainChic__Stitre2--soulign {
+.mainChic__Stitre--soulign2 {
   color: #a56799;
   display: inline-block;
   position: relative;
 }
 
-.mainChic__Stitre2--soulign::before {
+.mainChic__Stitre--soulign2::before {
   content: "";
   position: absolute;
   -webkit-transform: scaleX(0);
@@ -559,18 +609,18 @@ body {
   transition: all 0.4s;
 }
 
-.mainChic__Stitre2--soulign:hover::before {
+.mainChic__Stitre--soulign2:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
-.mainChic__Stitre3--soulign {
+.mainChic__Stitre--soulign3 {
   color: #6e4ccc;
   display: inline-block;
   position: relative;
 }
 
-.mainChic__Stitre3--soulign::before {
+.mainChic__Stitre--soulign3::before {
   content: "";
   position: absolute;
   -webkit-transform: scaleX(0);
@@ -585,7 +635,7 @@ body {
   transition: all 0.4s;
 }
 
-.mainChic__Stitre3--soulign:hover::before {
+.mainChic__Stitre--soulign3:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
@@ -635,12 +685,12 @@ body {
   margin-top: 12px;
 }
 
-.mainDelice__Stitre1--soulign {
+.mainDelice__Stitre--soulign1 {
   display: inline-block;
   position: relative;
 }
 
-.mainDelice__Stitre1--soulign::before {
+.mainDelice__Stitre--soulign1::before {
   content: "";
   position: absolute;
   -webkit-transform: scaleX(0);
@@ -648,64 +698,64 @@ body {
   width: 85%;
   height: 2px;
   bottom: 5px;
-  background: #000;
+  background: #0228dd;
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
-.mainDelice__Stitre1--soulign:hover::before {
+.mainDelice__Stitre--soulign1:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
-.mainDelice__Stitre2--soulign {
+.mainDelice__Stitre--soulign2 {
   display: inline-block;
   position: relative;
 }
 
-.mainDelice__Stitre2--soulign::before {
+.mainDelice__Stitre--soulign2::before {
   content: "";
   position: absolute;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  width: 75%;
+  width: 77%;
   height: 2px;
   bottom: 5px;
-  background: #000;
+  background: #0670f3;
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
-.mainDelice__Stitre2--soulign:hover::before {
+.mainDelice__Stitre--soulign2:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
-.mainDelice__Stitre3--soulign {
+.mainDelice__Stitre--soulign3 {
   display: inline-block;
   position: relative;
 }
 
-.mainDelice__Stitre3--soulign::before {
+.mainDelice__Stitre--soulign3::before {
   content: "";
   position: absolute;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  width: 72%;
+  width: 74%;
   height: 2px;
   bottom: 5px;
-  background: #000;
+  background: #229df9;
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
-.mainDelice__Stitre3--soulign:hover::before {
+.mainDelice__Stitre--soulign3:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
@@ -785,12 +835,12 @@ body {
   margin-top: 20px;
 }
 
-.mainPal__Stitre1--soulign {
+.mainPal__Stitre--soulign1 {
   display: inline-block;
   position: relative;
 }
 
-.mainPal__Stitre1--soulign::before {
+.mainPal__Stitre--soulign1::before {
   content: "";
   position: absolute;
   -webkit-transform: scaleX(0);
@@ -798,24 +848,24 @@ body {
   width: 45%;
   height: 2px;
   bottom: -1px;
-  background: #000;
+  background: #83cd60;
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
-.mainPal__Stitre1--soulign:hover::before {
+.mainPal__Stitre--soulign1:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
-.mainPal__Stitre2--soulign {
+.mainPal__Stitre--soulign2 {
   display: inline-block;
   position: relative;
 }
 
-.mainPal__Stitre2--soulign::before {
+.mainPal__Stitre--soulign2::before {
   content: "";
   position: absolute;
   -webkit-transform: scaleX(0);
@@ -823,24 +873,24 @@ body {
   width: 90%;
   height: 2px;
   bottom: -1px;
-  background: #000;
+  background: #83cd60;
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
-.mainPal__Stitre2--soulign:hover::before {
+.mainPal__Stitre--soulign2:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
-.mainPal__Stitre3--soulign {
+.mainPal__Stitre--soulign3 {
   display: inline-block;
   position: relative;
 }
 
-.mainPal__Stitre3--soulign::before {
+.mainPal__Stitre--soulign3::before {
   content: "";
   position: absolute;
   -webkit-transform: scaleX(0);
@@ -848,14 +898,14 @@ body {
   width: 100%;
   height: 2px;
   bottom: -1px;
-  background: #000;
+  background: #83cd60;
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
-.mainPal__Stitre3--soulign:hover::before {
+.mainPal__Stitre--soulign3:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
