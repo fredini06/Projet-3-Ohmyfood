@@ -38,6 +38,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 0;
 }
 
 .nav-carte__item {
@@ -959,5 +960,39 @@ body {
   color: #fdcb46;
   display: block;
   margin: 0 108px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .mainNote, .mainChic, .mainDelice, .mainPal {
+    width: 20em;
+  }
+  .footer__infos {
+    font-size: 24px;
+    line-height: 25px;
+  }
+  .mainNote__text--tableau-tr {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .mainChic__text--tableau-tr {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .mainDel__text--tableau-tr {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .mainPal__text--tableau-tr {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .prixBold, .prixBold2, .prixBold3 {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
