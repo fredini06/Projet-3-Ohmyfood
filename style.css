@@ -260,6 +260,9 @@ body {
 .footer__infos--lien {
   color: #fdcb46;
   text-decoration: none;
+}
+
+.footer__infos--lien:hover {
   -webkit-animation: shake .1s infinite;
           animation: shake .1s infinite;
 }

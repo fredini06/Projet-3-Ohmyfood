@@ -224,7 +224,8 @@ body{
 .footer__infos--lien{
     color: #fdcb46;
     text-decoration: none;
-        animation: shake .1s infinite;
+    &:hover{
+    animation: shake .1s infinite;}
 }
 
 @keyframes shake{
