@@ -38,6 +38,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 0;
 }
 
 .nav-carte__item {
@@ -54,8 +55,8 @@ body {
   margin: 20px 40px;
   padding: 10px;
   text-align: center;
-  width: 25em;
-  height: 35em;
+  width: 35em;
+  height: 45em;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
@@ -109,7 +110,7 @@ body {
 }
 
 .nav-carte__chic--soustitre {
-  font-family: Libre Baskerville, serif;
+  font-family: 'Libre Baskerville', serif;
   color: #c77412;
   font-size: 3em;
 }
@@ -259,6 +260,9 @@ body {
 .footer__infos--lien {
   color: #fdcb46;
   text-decoration: none;
+}
+
+.footer__infos--lien:hover {
   -webkit-animation: shake .1s infinite;
           animation: shake .1s infinite;
 }
@@ -314,7 +318,7 @@ body {
 .mainNote__textHaut {
   font-family: devonshire, serif;
   font-size: 2.5em;
-  font-weight: 50;
+  font-weight: normal;
   margin-top: 0;
 }
 
@@ -345,29 +349,18 @@ body {
   margin-top: 10px;
 }
 
-.mainNote__Stitre--soulign1 {
-  display: inline-block;
-  position: relative;
-}
-
-.mainNote__Stitre--soulign1::before {
+.mainNote__Stitre--soulign1::after {
   content: "";
-  position: absolute;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  width: 45%;
+  display: block;
   height: 2px;
-  bottom: 3px;
-  background: #3c1218;
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  width: 0;
+  -webkit-transition: width 0.5s ease;
+  transition: width 0.5s ease;
 }
 
-.mainNote__Stitre--soulign1:hover::before {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+.mainNote__Stitre--soulign1:hover::after {
+  width: 100%;
+  background: #3c1218;
 }
 
 .mainNote--img {
@@ -423,7 +416,7 @@ body {
 .noteBas__text {
   font-family: devonshire, serif;
   font-size: 2em;
-  font-weight: 50;
+  font-weight: normal;
   margin-bottom: 50px;
 }
 
@@ -513,81 +506,54 @@ body {
   font-size: 1.2em;
 }
 
-.mainChic__Stitre--soulign1 {
-  display: inline-block;
-  position: relative;
-}
-
-.mainChic__Stitre--soulign1::before {
+.mainChic__Stitre--soulign1::after {
   content: "";
-  position: absolute;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  width: 95%;
+  display: block;
   height: 2px;
-  bottom: -5px;
-  background: #c67412;
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  width: 0;
+  -webkit-transition: width 0.5s ease;
+  transition: width 0.5s ease;
 }
 
-.mainChic__Stitre--soulign1:hover::before {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+.mainChic__Stitre--soulign1:hover::after {
+  width: 100%;
+  background: #C67412;
 }
 
-.mainChic__Stitre2--soulign {
+.mainChic__Stitre--soulign2 {
   color: #a56799;
-  display: inline-block;
-  position: relative;
 }
 
-.mainChic__Stitre2--soulign::before {
+.mainChic__Stitre--soulign2::after {
   content: "";
-  position: absolute;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  width: 69%;
+  display: block;
   height: 2px;
-  bottom: -5px;
+  width: 0;
+  -webkit-transition: width 0.5s ease;
+  transition: width 0.5s ease;
+}
+
+.mainChic__Stitre--soulign2:hover::after {
+  width: 100%;
   background: #a56799;
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
 }
 
-.mainChic__Stitre2--soulign:hover::before {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-}
-
-.mainChic__Stitre3--soulign {
+.mainChic__Stitre--soulign3 {
   color: #6e4ccc;
-  display: inline-block;
-  position: relative;
 }
 
-.mainChic__Stitre3--soulign::before {
+.mainChic__Stitre--soulign3::after {
   content: "";
-  position: absolute;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  width: 85%;
+  display: block;
   height: 2px;
-  bottom: -5px;
-  background: #6e4ccc;
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  width: 0;
+  -webkit-transition: width 0.5s ease;
+  transition: width 0.5s ease;
 }
 
-.mainChic__Stitre3--soulign:hover::before {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+.mainChic__Stitre--soulign3:hover::after {
+  width: 100%;
+  background: #6e4ccc;
 }
 
 .mainDelice {
@@ -635,79 +601,46 @@ body {
   margin-top: 12px;
 }
 
-.mainDelice__Stitre1--soulign {
-  display: inline-block;
-  position: relative;
-}
-
-.mainDelice__Stitre1--soulign::before {
+.mainDelice__Stitre--soulign1::after {
   content: "";
-  position: absolute;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  width: 85%;
+  display: block;
   height: 2px;
-  bottom: 5px;
-  background: #000;
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  width: 0;
+  -webkit-transition: width 0.5s ease;
+  transition: width 0.5s ease;
 }
 
-.mainDelice__Stitre1--soulign:hover::before {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+.mainDelice__Stitre--soulign1:hover::after {
+  width: 100%;
+  background: #0228dd;
 }
 
-.mainDelice__Stitre2--soulign {
-  display: inline-block;
-  position: relative;
-}
-
-.mainDelice__Stitre2--soulign::before {
+.mainDelice__Stitre--soulign2::after {
   content: "";
-  position: absolute;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  width: 75%;
+  display: block;
   height: 2px;
-  bottom: 5px;
-  background: #000;
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  width: 0;
+  -webkit-transition: width 0.5s ease;
+  transition: width 0.5s ease;
 }
 
-.mainDelice__Stitre2--soulign:hover::before {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+.mainDelice__Stitre--soulign2:hover::after {
+  width: 100%;
+  background: #0670f3;
 }
 
-.mainDelice__Stitre3--soulign {
-  display: inline-block;
-  position: relative;
-}
-
-.mainDelice__Stitre3--soulign::before {
+.mainDelice__Stitre--soulign3::after {
   content: "";
-  position: absolute;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  width: 72%;
+  display: block;
   height: 2px;
-  bottom: 5px;
-  background: #000;
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  width: 0;
+  -webkit-transition: width 0.5s ease;
+  transition: width 0.5s ease;
 }
 
-.mainDelice__Stitre3--soulign:hover::before {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+.mainDelice__Stitre--soulign3:hover::after {
+  width: 100%;
+  background: #229df9;
 }
 
 .mainDel__text--tableau {
@@ -785,79 +718,18 @@ body {
   margin-top: 20px;
 }
 
-.mainPal__Stitre1--soulign {
-  display: inline-block;
-  position: relative;
-}
-
-.mainPal__Stitre1--soulign::before {
+.mainPal__Stitre--soulign1::after {
   content: "";
-  position: absolute;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  width: 45%;
+  display: block;
   height: 2px;
-  bottom: -1px;
-  background: #000;
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  width: 0;
+  -webkit-transition: width 0.5s ease;
+  transition: width 0.5s ease;
 }
 
-.mainPal__Stitre1--soulign:hover::before {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-}
-
-.mainPal__Stitre2--soulign {
-  display: inline-block;
-  position: relative;
-}
-
-.mainPal__Stitre2--soulign::before {
-  content: "";
-  position: absolute;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  width: 90%;
-  height: 2px;
-  bottom: -1px;
-  background: #000;
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-.mainPal__Stitre2--soulign:hover::before {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-}
-
-.mainPal__Stitre3--soulign {
-  display: inline-block;
-  position: relative;
-}
-
-.mainPal__Stitre3--soulign::before {
-  content: "";
-  position: absolute;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
+.mainPal__Stitre--soulign1:hover::after {
   width: 100%;
-  height: 2px;
-  bottom: -1px;
-  background: #000;
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-.mainPal__Stitre3--soulign:hover::before {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  background: #83cd60;
 }
 
 .mainPal__text--tableau {
@@ -909,5 +781,63 @@ body {
   color: #fdcb46;
   display: block;
   margin: 0 108px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .nav-carte__item {
+    width: 20em;
+  }
+  .mainNote, .mainChic, .mainDelice, .mainPal {
+    width: 20em;
+  }
+  .footer__infos {
+    font-size: 24px;
+    line-height: 25px;
+  }
+  .mainNote__text--tableau-tr {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .mainChic__text--tableau-tr {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .mainDel__text--tableau-tr {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .mainPal__text--tableau-tr {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .prixBold, .prixBold2, .prixBold3 {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .nav-carte__item {
+    width: 25em;
+    height: 35em;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .nav-carte__item {
+    width: 38em;
+    height: 45em;
+  }
+}
+
+@media all and (min-width: 2560px) {
+  .nav-carte__item {
+    width: 55em;
+    height: 75em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
