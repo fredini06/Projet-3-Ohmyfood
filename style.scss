@@ -37,8 +37,8 @@ body{
 /*NAV*/
 
 .nav-carte{
-    display: flex;
-    flex-direction: row;
+        display: flex;
+        flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     padding: 0;
@@ -50,8 +50,8 @@ body{
         margin: 20px 40px;
         padding: 10px;
         text-align: center;
-        width: 25em;
-        height: 35em;
+        width: 35em;
+        height: 45em;
         box-shadow:0 0 10px rgba(0, 0, 0, 0.2);
         cursor: pointer;
     }
@@ -291,71 +291,20 @@ body{
 
 // SOULIGNEMENT ANIME 1
 .mainNote__Stitre--soulign1{
-    display: inline-block;
-    position: relative;
-    &::before{
+    &::after{
         content: "";
-        position: absolute;
-        transform: scaleX(0);
-        width: 45%;
+        display: block;
         height: 2px;
-        bottom: 3px;
-        background: $menuNoteTextColor;
-        transform-origin: bottom left;
-        transition: all 0.4s;
+        width: 0;
+        transition: width 0.5s ease;
     }
-    &:hover::before{
-        transform: scaleX(1);
+    &:hover::after{
+        width: 100%;
+        background: $menuNoteTextColor;
     }
 }
 
 // SOULIGNEMENT ANIME 1
-
-// SOULIGNEMENT ANIME 2
-.mainNote__Stitre--soulign2{
-    display: inline-block;
-    position: relative;
-    &::before{
-        content: "";
-        position: absolute;
-        transform: scaleX(0);
-        width: 77%;
-        height: 2px;
-        bottom: 3px;
-        background: $menuNoteTextColor;
-        transform-origin: bottom left;
-        transition: all 0.4s;
-    }
-    &:hover::before{
-        transform: scaleX(1);
-    }
-}
-
-
-// SOULIGNEMENT ANIME 2
-
-// SOULIGNEMENT ANIME 3
-.mainNote__Stitre--soulign3{
-    display: inline-block;
-    position: relative;
-    &::before{
-        content: "";
-        position: absolute;
-        transform: scaleX(0);
-        width: 100%;
-        height: 2px;
-        bottom: 3px;
-        background: $menuNoteTextColor;
-        transform-origin: bottom left;
-        transition: all 0.4s;
-    }
-    &:hover::before{
-        transform: scaleX(1);
-    }
-}
-
-// SOULIGNEMENT ANIME 3
-
 
 .mainNote--img{
     padding-top: 50px;
@@ -473,25 +422,19 @@ body{
 // SOULIGNEMENT ANIME 1
 
 .mainChic__Stitre--soulign1{
-    display: inline-block;
-    position: relative;
-}
-
-.mainChic__Stitre--soulign1::before{
+    &::after{
     content: "";
-    position: absolute;
-    transform: scaleX(0);
-    width: 95%;
+    display: block;
     height: 2px;
-    bottom: -5px;
-    background: #c67412;
-    transform-origin: bottom left;
-    transition: all 0.4s;
+    width: 0;
+    transition: width 0.5s ease;
+    }
+    &:hover::after{
+    width: 100%;
+    background:#C67412;
+    }
 }
 
-.mainChic__Stitre--soulign1:hover::before{
-    transform: scaleX(1);
-}
 
 // SOULIGNEMENT ANIME 1
 
@@ -499,47 +442,37 @@ body{
 
 .mainChic__Stitre--soulign2{
     color: #a56799;
-    display: inline-block;
-    position: relative;
-    &::before{
+    &::after{
         content: "";
-        position: absolute;
-        transform: scaleX(0);
-        width: 69%;
+        display: block;
         height: 2px;
-        bottom: -5px;
+        width: 0;
+        transition: width 0.5s ease;
+        }
+        &:hover::after{
+        width: 100%;
         background: #a56799;
-        transform-origin: bottom left;
-        transition: all 0.4s;
+        }
     }
-    &:hover::before{
-        transform: scaleX(1);
-    }
-}
-
+    
 // SOULIGNEMENT ANIME 2
 
 // SOULIGNEMENT ANIME 3
 
 .mainChic__Stitre--soulign3{
     color: #6e4ccc;
-    display: inline-block;
-    position: relative;
-    &::before{
+    &::after{
         content: "";
-        position: absolute;
-        transform: scaleX(0);
-        width: 85%;
+        display: block;
         height: 2px;
-        bottom: -5px;
+        width: 0;
+        transition: width 0.5s ease;
+        }
+        &:hover::after{
+        width: 100%;
         background: #6e4ccc;
-        transform-origin: bottom left;
-        transition: all 0.4s;
+        }
     }
-    &:hover::before{
-        transform: scaleX(1);
-    }
-}
 
 // SOULIGNEMENT ANIME 3
 
@@ -591,45 +524,36 @@ body{
 // SOULIGNEMENT ANIME 1
 
 .mainDelice__Stitre--soulign1{
-    display: inline-block;
-    position: relative;
-    &::before{
+    &::after{
         content: "";
-        position: absolute;       
-        transform: scaleX(0);
-        width: 85%;
+        display: block;
         height: 2px;
-        bottom: 5px;
+        width: 0;
+        transition: width 0.5s ease;
+        }
+        &:hover::after{
+        width: 100%;
         background: #0228dd;
-        transform-origin: bottom left;
-        transition: all 0.4s;
-    }
-    &:hover::before{
-        transform: scaleX(1);
-    }
+        }
 }
+
 
 // SOULIGNEMENT ANIME 1
 
 // SOULIGNEMENT ANIME 2
 
 .mainDelice__Stitre--soulign2{
-    display: inline-block;
-    position: relative;
-    &::before{
+    &::after{
         content: "";
-        position: absolute;       
-        transform: scaleX(0);
-        width: 77%;
+        display: block;
         height: 2px;
-        bottom: 5px;
+        width: 0;
+        transition: width 0.5s ease;
+        }
+        &:hover::after{
+        width: 100%;
         background: #0670f3;
-        transform-origin: bottom left;
-        transition: all 0.4s;
-    }
-    &:hover::before{
-        transform: scaleX(1);
-    }
+        }
 }
 
 // SOULIGNEMENT ANIME 2
@@ -637,23 +561,19 @@ body{
 // SOULIGNEMENT ANIME 3
 
 .mainDelice__Stitre--soulign3{
-    display: inline-block;
-    position: relative;
-    &::before{
+    &::after{
         content: "";
-        position: absolute;       
-        transform: scaleX(0);
-        width: 74%;
+        display: block;
         height: 2px;
-        bottom: 5px;
+        width: 0;
+        transition: width 0.5s ease;
+        }
+        &:hover::after{
+        width: 100%;
         background: #229df9;
-        transform-origin: bottom left;
-        transition: all 0.4s;
-    }
-    &:hover::before{
-        transform: scaleX(1);
-    }
+        }
 }
+
 
 // SOULIGNEMENT ANIME 3
 
@@ -725,71 +645,21 @@ body{
 // SOULIGNEMENT ANIME 1
 
 .mainPal__Stitre--soulign1{
-    display: inline-block;
-    position: relative;
-    &::before{
+    &::after{
         content: "";
-        position: absolute;       
-        transform: scaleX(0);
-        width: 45%;
+        display: block;
         height: 2px;
-        bottom: -1px;
+        width: 0;
+        transition: width 0.5s ease;
+        }
+        &:hover::after{
+        width: 100%;
         background: #83cd60;
-        transform-origin: bottom left;
-        transition: all 0.4s;
-    }
-    &:hover::before{
-        transform: scaleX(1);
-    }
+        }
 }
 
 // SOULIGNEMENT ANIME 1
 
-// SOULIGNEMENT ANIME 2
-
-.mainPal__Stitre--soulign2{
-    display: inline-block;
-    position: relative;
-    &::before{
-        content: "";
-        position: absolute;       
-        transform: scaleX(0);
-        width: 90%;
-        height: 2px;
-        bottom: -1px;
-        background: #83cd60;
-        transform-origin: bottom left;
-        transition: all 0.4s;
-    }
-    &:hover::before{
-        transform: scaleX(1);
-    }
-}
-
-// SOULIGNEMENT ANIME 2
-
-// SOULIGNEMENT ANIME 3
-
-.mainPal__Stitre--soulign3{
-    display: inline-block;
-    position: relative;
-    &::before{
-        content: "";
-        position: absolute;       
-        transform: scaleX(0);
-        width: 100%;
-        height: 2px;
-        bottom: -1px;
-        background: #83cd60;
-        transform-origin: bottom left;
-        transition: all 0.4s;
-    }
-    &:hover::before{
-        transform: scaleX(1);
-    }
-}
-
-// SOULIGNEMENT ANIME 3
 
 .mainPal__text--tableau{
     display: flex;
@@ -838,6 +708,10 @@ body{
 // RESPONSIVE
 
 @media screen and (min-width: 320px) and (max-width: 425px){
+
+    .nav-carte__item{
+        width: 20em;
+    }
     
     .mainNote, .mainChic, .mainDelice, .mainPal{
         width: 20em;
@@ -879,4 +753,23 @@ body{
 
 }
 
+@media all and (min-width: 1024px){
+    .nav-carte__item{
+        width: 25em;
+        height: 35em;
+    }
+}
 
+@media all and (min-width: 1440px){
+    .nav-carte__item{
+        width: 38em;
+        height: 45em;
+    }
+}
+
+@media all and (min-width: 2560px){
+    .nav-carte__item{
+        width: 55em;
+        height: 75em;
+    }
+}
