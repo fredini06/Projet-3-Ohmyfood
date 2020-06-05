@@ -1,0 +1,24 @@
+{
+  "name": "projet-3",
+  "version": "1.0.0",
+  "description": "Ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prefix": "postcss ./Projet-3/style.css --use autoprefixer -d ./Projet-3/Prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fredini06/Projet-3-Ohmyfood.git"
+  },
+  "keywords": [
+    "reservation_restaurant",
+    "menus_en_ligne"
+  ],
+  "author": "Fred",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fredini06/Projet-3-Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/fredini06/Projet-3-Ohmyfood#readme"
+}
