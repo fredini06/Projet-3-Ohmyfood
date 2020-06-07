@@ -770,29 +770,31 @@ body {
     font-size: 24px;
     line-height: 25px;
   }
-  .mainNote__text--tableau-tr {
-    display: inline-block;
-    text-align: left;
-    margin-bottom: 10px;
+  .line__note, .line__chic, .line__del, .line__pal {
+    width: 15em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .mainChic__text--tableau-tr {
-    display: inline-block;
-    text-align: left;
-    margin-bottom: 10px;
+}
+
+@media all and (min-width: 768px) {
+  .mainNote, .mainPal, .mainChic, .mainDelice {
+    width: 60%;
   }
-  .mainDel__text--tableau-tr {
-    display: inline-block;
-    text-align: left;
-    margin-bottom: 10px;
-  }
-  .mainPal__text--tableau-tr {
-    display: inline-block;
-    text-align: left;
-    margin-bottom: 10px;
-  }
-  .prixBold, .prixBold2, .prixBold3 {
-    display: inline-block;
-    margin-bottom: 20px;
+  .line__note, .line__chic, .line__del, .line__pal {
+    width: 25em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
