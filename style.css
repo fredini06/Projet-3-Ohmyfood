@@ -368,6 +368,10 @@ body {
   margin-top: 10px;
 }
 
+.menus-line {
+  padding: 0 0 50px;
+}
+
 .mainNote__Stitre--soulign1::after {
   content: "";
   display: block;
@@ -386,6 +390,22 @@ body {
   padding-top: 50px;
 }
 
+.line__note {
+  font-family: 'Kalam', cursive;
+  width: 34em;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.p1 {
+  margin: 5px;
+}
+
 .mainNote__text--titre {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -395,32 +415,10 @@ body {
           justify-content: space-evenly;
 }
 
-.mainNote__text--tableau {
-  font-family: 'Kalam', cursive;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 0 50px;
-  margin-bottom: 50px;
-}
-
-.mainNote__text--tableau-tr {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  line-height: 2rem;
-}
-
 .prixBold {
   font-weight: 800;
   font-size: 1.2em;
+  margin: 0;
 }
 
 .noteBas {
@@ -487,42 +485,35 @@ body {
   margin-top: 10px;
 }
 
-.mainChic__text--tableau {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 0 50px;
-  margin-bottom: 50px;
-  margin-top: 30px;
+.menus-line__chic {
+  padding: 50px 0;
 }
 
-.mainChic__text--tableau-tr {
+.line__chic {
+  width: 38em;
+  margin: 6px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  line-height: 2rem;
   font-family: 'Libre Baskerville', serif;
   font-size: .9em;
   color: #c67412;
 }
 
-.mainChic__text--tableau-tr2 {
+.line__chic2 {
   color: #a56799;
 }
 
-.mainChic__text--tableau-tr3 {
+.line__chic3 {
   color: #6e4ccc;
 }
 
 .prixBold2 {
   font-size: 1.2em;
+  margin: 0;
 }
 
 .mainChic__Stitre--soulign1::after {
@@ -662,35 +653,28 @@ body {
   background: #229df9;
 }
 
-.mainDel__text--tableau {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 0 40px;
-  margin-bottom: 50px;
-  margin-top: 30px;
-  font-family: 'kalam', cursive;
-  font-size: 1.1em;
-  font-weight: normal;
-  color: #000;
+.menus-line__del {
+  margin: 25px 0 35px;
 }
 
-.mainDel__text--tableau-tr {
+.line__del {
+  width: 32em;
+  margin: 6px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  line-height: 3rem;
+  font-family: 'kalam', cursive;
+  font-size: 1.1em;
+  font-weight: normal;
+  color: #000;
 }
 
 .prixBold3 {
   font-size: 1.1em;
+  margin: 0;
 }
 
 .mainPal {
@@ -751,31 +735,23 @@ body {
   background: #83cd60;
 }
 
-.mainPal__text--tableau {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 0 40px;
-  margin-bottom: 50px;
-  margin-top: 30px;
-  font-family: 'Tillana', cursive;
-  font-size: 1em;
-  font-weight: normal;
-  color: #000;
+.menus-line__pal {
+  margin: 25px 0 35px;
 }
 
-.mainPal__text--tableau-tr {
+.line__pal {
+  width: 35em;
+  margin: 6px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  line-height: 3rem;
+  font-family: 'Tillana', cursive;
+  font-size: 1em;
+  font-weight: normal;
+  color: #000;
 }
 
 .prixBold3 {
