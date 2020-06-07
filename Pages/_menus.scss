@@ -1,0 +1,442 @@
+/*LES MENUS*/
+
+// NOTE
+
+.mainNote{
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    background: $menuNoteColor; 
+    color: $menuNoteTextColor;
+    text-align: center;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.2);
+    &__text{
+        font-family: 'Kalam', cursive;
+        font-size: 1em;
+    }
+    &__textHaut{
+        font-family: devonshire, serif;
+        font-size: 2.5em;
+        font-weight: normal;
+        margin-top: 0;
+    }
+    h2{
+        font-size: 1.3em;
+        margin-top: 0;
+    }
+}
+
+.menNote{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainNote__Stitre{
+    font-family: 'Kalam', cursive;
+    font-size: 1.2em;
+    font-weight: 700;
+    width: 180px;
+    padding: 0;
+}
+
+.imgMenu1 img{
+    max-width: 63%;
+    margin-top: 10px;  
+}
+
+// SOULIGNEMENT ANIME 1
+.mainNote__Stitre--soulign1{
+    &::after{
+        content: "";
+        display: block;
+        height: 2px;
+        width: 0;
+        transition: width 0.5s ease;
+    }
+    &:hover::after{
+        width: 100%;
+        background: $menuNoteTextColor;
+    }
+}
+
+// SOULIGNEMENT ANIME 1
+
+.mainNote--img{
+    padding-top: 50px;
+}
+
+.mainNote__text--titre{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.mainNote__text--tableau{
+    font-family: 'Kalam', cursive;
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    margin-bottom: 50px;
+}
+
+.mainNote__text--tableau-tr{
+    display: flex;
+    justify-content: space-between;
+    line-height: 2rem;
+}
+
+.prixBold{
+    font-weight: 800;
+    font-size: 1.2em;
+}
+
+.noteBas{
+    display: flex;
+    justify-content: center;
+    &__text{
+        font-family: devonshire, serif;
+        font-size: 2em;
+        font-weight: normal;
+        margin-bottom: 50px;
+    }
+    &__img{
+        padding: 25px 10px;
+    }
+}
+
+// ********************************************
+
+// CHIC
+
+.mainChic{
+    width: 50%;
+    margin: 0 auto 50px;
+    padding-bottom: 50px;
+    background: $menuChicColor;
+    text-align: center;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.2);
+    &__titre{
+        font-family: 'Croissant One', serif;
+        font-size: 2em;
+        background: -webkit-linear-gradient(25deg, #c77412, #905bfd);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding: 100px 0 50px;
+        font-weight: normal;
+    }
+}
+
+.menChic{
+    display: flex;
+    justify-content: space-around;
+}
+
+.mainChic__Stitre{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #c67412;
+    width: 480px;
+    margin: 0;
+    padding: 0;
+}
+
+.imgMenu2G img{
+    max-width: 100%;
+    max-height:100%;
+    margin-top: 10px;  
+}
+
+.mainChic__text--tableau{
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.mainChic__text--tableau-tr{
+    display: flex;
+    justify-content: space-between;
+    line-height: 2rem;
+    font-family: 'Libre Baskerville', serif;
+    font-size: .9em;
+    color: #c67412;
+    &2{
+        color: #a56799;
+    }
+    &3{
+        color: #6e4ccc;
+    }
+}
+
+.prixBold2{
+    font-size: 1.2em;
+}
+
+// SOULIGNEMENT ANIME 1
+
+.mainChic__Stitre--soulign1{
+    &::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    transition: width 0.5s ease;
+    }
+    &:hover::after{
+    width: 100%;
+    background:#C67412;
+    }
+}
+
+
+// SOULIGNEMENT ANIME 1
+
+// SOULIGNEMENT ANIME 2
+
+.mainChic__Stitre--soulign2{
+    color: #a56799;
+    &::after{
+        content: "";
+        display: block;
+        height: 2px;
+        width: 0;
+        transition: width 0.5s ease;
+        }
+        &:hover::after{
+        width: 100%;
+        background: #a56799;
+        }
+    }
+    
+// SOULIGNEMENT ANIME 2
+
+// SOULIGNEMENT ANIME 3
+
+.mainChic__Stitre--soulign3{
+    color: #6e4ccc;
+    &::after{
+        content: "";
+        display: block;
+        height: 2px;
+        width: 0;
+        transition: width 0.5s ease;
+        }
+        &:hover::after{
+        width: 100%;
+        background: #6e4ccc;
+        }
+    }
+
+// SOULIGNEMENT ANIME 3
+
+// CHIC
+
+// ********************************************
+
+// DELICE
+
+.mainDelice{
+    width: 50%;
+    margin: 0 auto 50px;
+    padding-bottom: 50px;
+    background: $menuDeliceColor;
+    text-align: center;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.2);
+    &__titre{
+        font-family: 'Dancing Script', cursive;
+        font-size: 3.8em;
+        padding-left: 10px;
+        font-weight: 500;
+        background: -webkit-linear-gradient(25deg, #0431df, #0887fb);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding: 100px 0 30px;
+    }
+    &__Stitre{
+        font-family: 'Kalam', cursive;
+        font-size: 1.5em;
+        font-weight: normal;
+        color: #000;
+        width: 480px;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.menDel{
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgMenu3 img{
+    max-width: 80%;
+    max-height: 80%;
+    margin-top: 12px;  
+}
+
+// SOULIGNEMENT ANIME 1
+
+.mainDelice__Stitre--soulign1{
+    &::after{
+        content: "";
+        display: block;
+        height: 2px;
+        width: 0;
+        transition: width 0.5s ease;
+        }
+        &:hover::after{
+        width: 100%;
+        background: #0228dd;
+        }
+}
+
+
+// SOULIGNEMENT ANIME 1
+
+// SOULIGNEMENT ANIME 2
+
+.mainDelice__Stitre--soulign2{
+    &::after{
+        content: "";
+        display: block;
+        height: 2px;
+        width: 0;
+        transition: width 0.5s ease;
+        }
+        &:hover::after{
+        width: 100%;
+        background: #0670f3;
+        }
+}
+
+// SOULIGNEMENT ANIME 2
+
+// SOULIGNEMENT ANIME 3
+
+.mainDelice__Stitre--soulign3{
+    &::after{
+        content: "";
+        display: block;
+        height: 2px;
+        width: 0;
+        transition: width 0.5s ease;
+        }
+        &:hover::after{
+        width: 100%;
+        background: #229df9;
+        }
+}
+
+
+// SOULIGNEMENT ANIME 3
+
+.mainDel__text--tableau{
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    font-family: 'kalam', cursive;
+    font-size: 1.1em;
+    font-weight: normal;
+    color: #000;
+    &-tr{
+        display: flex;
+        justify-content: space-between;
+        line-height: 3rem;
+    }
+}
+
+.prixBold3{
+    font-size: 1.1em;
+}
+
+// DELICE
+
+// *******************************************
+
+// PALETTE
+
+.mainPal{
+    width: 50%;
+    margin: 0 auto 50px;
+    padding-bottom: 50px;
+    background: $menuDeliceColor;
+    text-align: center;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.2);
+    &__titre{
+        font-family: 'Kaushan Script', cursive;
+        font-size: 3.8em;
+        padding-left: 10px;
+        font-weight: 500;
+        background: -webkit-linear-gradient(25deg, #4c9f42, #bfff7e);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding: 100px 0 30px;
+    }
+    &__Stitre{
+        font-family: 'Tillana', cursive;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #000;
+        width: 370px;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.menPal{
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgMenu4 img{
+    max-width: 90%;
+    margin-top: 20px;  
+}
+
+// SOULIGNEMENT ANIME 1
+
+.mainPal__Stitre--soulign1{
+    &::after{
+        content: "";
+        display: block;
+        height: 2px;
+        width: 0;
+        transition: width 0.5s ease;
+        }
+        &:hover::after{
+        width: 100%;
+        background: #83cd60;
+        }
+}
+
+// SOULIGNEMENT ANIME 1
+
+
+.mainPal__text--tableau{
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    font-family: 'Tillana', cursive;
+    font-size: 1em;
+    font-weight: normal;
+    color: #000;
+    &-tr{
+        display: flex;
+        justify-content: space-between;
+        line-height: 3rem;
+    }
+}
+
+.prixBold3{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+// PALETTE
+

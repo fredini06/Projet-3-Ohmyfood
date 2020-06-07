@@ -1,0 +1,40 @@
+/*FOOTER*/
+
+.footer{
+    color: $mainTextColor;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.footer__infos{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Op", sans-serif;
+    font-size: 28px;
+    padding: 15px 30px;
+    margin-bottom: 0;
+    line-height: 10px;
+}
+
+.footer__infos--lien{
+    color: #fdcb46;
+    text-decoration: none;
+    &:hover{
+    animation: shake .1s infinite;}
+}
+
+@keyframes shake{
+    0%{
+        transform: translateX(2%);
+    }
+    33%{
+        transform: translateX(-2%) rotate(2deg);
+    }
+    65%{
+        transform: rotate(-2deg);
+    }
+}
+
+/*FOOTER*/

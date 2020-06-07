@@ -1,0 +1,61 @@
+
+
+/*BUTTON PROCHAINEMENT*/
+
+.btn{
+    margin: 0 auto;
+    background: $mainColor;
+    width: 19em;
+    height: 3em;
+    line-height: 3em;
+    border-radius: 20px;
+    margin-bottom: 150px;
+    cursor: pointer;
+    & a{
+        font-family: "Op", sans-serif;
+        text-decoration: none;
+        font-size: 1.6em;
+        color: $mainTextColor;
+        margin: 0 52px;
+    }
+}
+
+.point{
+    margin: 0;
+    padding: 0;
+    &::after{
+    display: inline-block;
+    animation: dotted 2s infinite;
+    content: "";
+    margin-left: 5px;
+    }
+}
+
+@keyframes dotted{
+    0%{content:"";}
+    25%{content:".";}
+    50%{content:"..";}
+    75%{content:"...";}
+    100%{content:"";}
+}
+
+/*BUTTON PROCHAINEMENT*/
+
+/*BUTTON BAS MENU*/
+
+.btnBas{
+    margin: 0 auto 150px;
+    background: $mainColor;
+    width: 19em;
+    height: 3em;
+    line-height: 3em;
+    border-radius: 20px;
+    & a{
+        font-family: "Op", sans-serif;
+        text-decoration: none;
+        font-size: 1.6em;
+        color: $mainTextColor;
+        display: block;
+        margin: 0 108px;
+    }
+}

@@ -1,0 +1,68 @@
+// RESPONSIVE
+
+@media screen and (min-width: 320px) and (max-width: 425px){
+
+    .nav-carte__item{
+        width: 20em;
+    }
+    
+    .mainNote, .mainChic, .mainDelice, .mainPal{
+        width: 20em;
+    }
+    
+    .footer__infos{
+            font-size: 24px;
+            line-height: 25px;
+    }
+
+    .mainNote__text--tableau-tr{
+        display: inline-block;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .mainChic__text--tableau-tr{
+        display: inline-block;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .mainDel__text--tableau-tr{
+        display: inline-block;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .mainPal__text--tableau-tr{
+        display: inline-block;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    
+    .prixBold, .prixBold2, .prixBold3{
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media all and (min-width: 1024px){
+    .nav-carte__item{
+        width: 25em;
+        height: 35em;
+    }
+}
+
+@media all and (min-width: 1440px){
+    .nav-carte__item{
+        width: 38em;
+        height: 45em;
+    }
+}
+
+@media all and (min-width: 2560px){
+    .nav-carte__item{
+        width: 55em;
+        height: 75em;
+    }
+}
