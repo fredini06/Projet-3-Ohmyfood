@@ -808,6 +808,13 @@ body {
   }
 }
 
+@media all and (min-width: 1280px) {
+  .nav-carte__item {
+    width: 28em;
+    height: 45em;
+  }
+}
+
 @media all and (min-width: 1440px) {
   .nav-carte__item {
     width: 38em;
