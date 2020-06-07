@@ -23,7 +23,7 @@
 
 }
 
-@media all and (min-width: 768px){
+@media all and (max-width: 768px){
     .mainNote, .mainPal, .mainChic, .mainDelice{
         width: 60%;
     }
@@ -35,10 +35,13 @@
     }
 }
 
-@media all and (min-width: 1024px){
+@media all and (max-width: 1024px){
     .nav-carte__item{
         width: 25em;
         height: 35em;
+    }
+    .line__note, .line__chic, .line__del, .line__pal{
+        width: 30em;
     }
 }
 
