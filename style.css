@@ -759,7 +759,7 @@ body {
   font-weight: 600;
 }
 
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media only screen and (min-width: 320px) and (max-width: 425px) {
   .nav-carte__item {
     width: 20em;
   }
@@ -770,8 +770,8 @@ body {
     font-size: 24px;
     line-height: 25px;
   }
-  .line__note, .line__chic, .line__del, .line__pal {
-    width: 15em;
+  .menus-line {
+    width: 10%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -782,12 +782,11 @@ body {
   }
 }
 
-@media all and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .mainNote, .mainPal, .mainChic, .mainDelice {
     width: 60%;
   }
   .line__note, .line__chic, .line__del, .line__pal {
-    width: 25em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -796,33 +795,38 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .p1 {
+    margin: 10px auto;
+    width: 60%;
+  }
 }
 
-@media all and (max-width: 1024px) {
-  .nav-carte__item {
-    width: 25em;
-    height: 35em;
-  }
+@media only screen and (max-width: 1024px) {
   .line__note, .line__chic, .line__del, .line__pal {
-    width: 30em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+    width: 70%;
+  }
+  .p1 {
+    margin: 10px auto;
+    width: 70%;
   }
 }
 
-@media all and (max-width: 1280px) {
-  .nav-carte__item {
-    width: 28em;
-    height: 45em;
-  }
-}
-
-@media all and (min-width: 1440px) {
+@media only screen and (min-width: 1440px) {
   .nav-carte__item {
     width: 38em;
     height: 45em;
   }
 }
 
-@media all and (min-width: 2560px) {
+@media only screen and (min-width: 2560px) {
   .nav-carte__item {
     width: 55em;
     height: 75em;
