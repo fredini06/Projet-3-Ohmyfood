@@ -15,10 +15,17 @@
             line-height: 25px;
     }
 
-    .menus-line{
-        width: 10%;
+    .noteBas{
         display: flex;
         flex-direction: column;
+        &__img{
+            margin: 0 auto;
+        }
+    }
+
+    .p1{
+        margin: 10px auto;
+        width: 60%;
     }
 
 }

@@ -770,8 +770,7 @@ body {
     font-size: 24px;
     line-height: 25px;
   }
-  .menus-line {
-    width: 10%;
+  .noteBas {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -779,6 +778,13 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .noteBas__img {
+    margin: 0 auto;
+  }
+  .p1 {
+    margin: 10px auto;
+    width: 60%;
   }
 }
 
